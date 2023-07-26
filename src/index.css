@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html, #root {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+td {
+    vertical-align: middle;
+}
+
+@layer base {
+.panel .active {
+    @apply text-rose-800 border-rose-800 scale-105
+}
+
+.panel a {
+    @apply transition-all duration-300  pb-1 border-b-2 border-white/0
+}
+}
